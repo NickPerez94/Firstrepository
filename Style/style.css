@@ -16,7 +16,7 @@
      background-color: green;
      display: flex;
      padding: 30px;
-     display:grid
+     display:grid;
 }
 
 .navbar{
@@ -35,6 +35,7 @@
      font-size: 20px;
     }
 
+
 /**IMAGEN DEL MEDIO**/
 
 .imagen1 {
@@ -50,23 +51,29 @@
      font-family: 'Cairo', sans-serif; 
     }
 
+
+    .menuitem{
+     border: ridge;
+     background-color: white;
+     color: black;
+     font-weight: bold;
+    }
+
    /**CARDS**/
 
 .cards {
      padding: 70px;
      display: flex;
      gap: 50px;
-    
     }
+
 
 .card {
      color: rgba(255, 255, 255, 0.733); 
      width: 170px;
      background-color: rgb(51, 94, 151) ;
-     text-align: center;
      border-radius: 20px;
      overflow: hidden;
-     font-family: 'Satisfy', cursive;
 }
 
 .imagen-facebook{ 
@@ -74,7 +81,7 @@
     }
 
 section{
-     background-color: rgb(8, 8, 116);
+     background: linear-gradient(rgb(51, 94, 151), aqua) ;
     }
 
 .card-div{ 
@@ -193,9 +200,11 @@ section{
      border-radius: 6px;
 }
 
-.contenedor .containerdescription {
-      padding: 0 20px;
-}
+.padre{
+     display: flex;
+     padding: 30px;
+     display:grid;
+     }
 
 .containerdescription  { font-size: 30px;
 
@@ -211,6 +220,7 @@ section{
 .gridgallery .img-box{
      position: relative;
 }
+
 
 .contenedor{
      width: 100%;
@@ -229,6 +239,15 @@ section{
      padding-block: 30px;
 }
 
+/**animación**/
+
+.giro:hover{
+     transform: rotate(-30deg);
+}
+
+.logo:hover{
+     transform:  scale(1.5,2);
+ }
 
 
 /**las demás paginas**/
@@ -237,7 +256,6 @@ section{
      background-color: rgb(88, 133, 59);
      padding: 30px;
      padding-block: 30px;
-     
 }
 
 /**media querie para 460px (mobile)**/

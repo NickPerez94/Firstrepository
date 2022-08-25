@@ -326,10 +326,6 @@ background: rgba(0,0,0,.4);
 
       @media screen and (max-width:375px) {
            
-      .padre{
-          box-sizing: border-box;
-      }
-
      .menu{ 
           color: white;
           list-style-type: none;
@@ -362,6 +358,7 @@ background: rgba(0,0,0,.4);
           list-style-type: none;
           display: flex;   
           gap: 5px;
+          flex-wrap: wrap;
           text-align: center;
           justify-content: center;
           font-family: 'Cairo', sans-serif;

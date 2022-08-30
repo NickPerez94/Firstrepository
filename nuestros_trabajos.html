@@ -5,26 +5,59 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nuestros trabajos</title>
-    <link rel="stylesheet" href="./Style/style.css">
-    <link rel="stylesheet" href="./Style/bootstrap.min.css">
 
-</head>
-       <body class="padre"> 
 
-          <a href="./index.html"><img class="logo" src= "./img/logo original.png"  alt="logo"> </a>
-          <header class="contenedor"> <a href="./index.html"></a>
-                
+         <!--Estilos-->
+       
+         <link rel="stylesheet" href="./Style/style.css">
+         <link rel="stylesheet" href="./Style/bootstrap.min.css">
+
+
+           <!--Fuentes-->
+
+           <link rel="preconnect" href="https://fonts.googleapis.com">
+           <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+           <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200&display=swap" rel="stylesheet">
+         
+           <link rel="preconnect" href="https://fonts.googleapis.com">
+           <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+           <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+
+
+           <style type="text/css">
+            a:link, a:visited, a:active {
+            text-decoration:none}
+           </style>
+
+
+</head>   
+        <body class="colorgeneral">
+          <header class="encabezado" >
+                  <nav class="navbar">
+                     <a href="./index.html" class="index"> <img class="logo" src= "./img/logo original.png"  alt="logo"> </a>
+                      <ul class="menu">
+                        <li class="menuitem"><a href="./index.html">Inicio</a></li>
+                        <li class="menuitem"><a href="./quienes_somos.html"> Quiénes somos </a></li>
+                        <li class="menuitem"><a href="./nuestros_servicios.html"> Nuestros servicios </a></li>
+                        <li class="menuitem"><a href="./nuestros_trabajos.html"> Nuestros trabajos </a></li>
+                        <li class="menuitem"><a href="./vistazo-mas-profundo.html"> Un vistazo más profundo</a></li>
+                        <li class="menuitem"><a href="./nuestro-equipo.html"> Conocé al equipo</a></li>
+                       </ul>
+                  </nav>
+          </header>
         
 
                  
              <div >
-                      <h2 >Aquí encontrara unas imagenes de los trabajos que realizamos</h2>
+                      <h2 class="titulotrab">Aquí encontrara unas imagenes de los trabajos que realizamos</h2>
              </div>
 
             
              <!--Galería-->
 
-             <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+          <section class="gallerystart">
+
+             <div id="carouselExampleCaptions" class="carousel slide corrido" data-bs-ride="false">
                 <div class="carousel-indicators">
                   <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                   <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -66,12 +99,7 @@
                 </button>
               </div>
 
-
-
-              
-                      </div>
-                
-            </div>
+          </section>
           
     </header>
                 

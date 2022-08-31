@@ -28,7 +28,6 @@
      justify-content: start;
      padding: 40px;
      padding-bottom: 40px;
-     display:grid;
 }
 
 .navbar{
@@ -117,12 +116,6 @@
      color: white;
 }
 
-.itemcontacto::selection{
-     background-color:black;
-     color: white;
-}
-
-
 /**footer**/
 
 .futer{
@@ -130,14 +123,34 @@
      justify-content: center;
 }
 
+.futerquienes{
+     display: flex;
+     justify-content: center;
+}
 
 
 /** Quienes somos **/
 
 .parrafo1 {
      margin: 30px;
-     padding: 15px;
+     padding: 80px;
+     padding-top: 20px;
 }
+
+.ultima{
+     padding-top: 135px;
+}
+
+.parra::selection{
+     background-color: black;
+     color: white;
+}
+
+.parraparra::selection{
+     background-color: black;
+     color: white;
+}
+
 
 /** Nuestro equipo**/
 .equipo {
@@ -158,8 +171,8 @@
 
 
 .sexion{
-    background-color: rgb(12, 12, 56);
-    color: #fff;
+    background-color: white;
+    color:  black;
     text-align: center;
 }
 
@@ -170,6 +183,7 @@
 .titulotrab{
      background-color: white;
      color:black;
+     padding: 30px;
 }
 
 .tablat{
@@ -201,6 +215,7 @@
 .seccionmaestre{
      padding: 50px;
 }
+
 
 /**Galería**/
 
@@ -254,6 +269,7 @@
 
       /**gallery media querie 460px**/
 
+
      .gallerystart {
           width: 300px;
           padding: 12px;
@@ -268,6 +284,7 @@
           clear: both;
           margin: 0;
           width: 100%;
+     
           }
 
 
@@ -342,7 +359,7 @@
      @media screen and (max-width:769px){
         
 
-          .navbar{
+          .encabezado{
                         display: flex;
                         justify-content: center;
                         align-items: center;
@@ -368,10 +385,7 @@
 
      
       /**'index media querie para 769 px (tablet)**/
-      
-      .navbar{
-          display: block center;
-      }
+    
 
       .menu{ 
           color: white;

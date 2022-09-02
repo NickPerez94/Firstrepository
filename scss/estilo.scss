@@ -1,0 +1,58 @@
+$color-section:blue;
+
+
+.encabezado{
+    background-color: blue($color: #000000);
+}
+
+.logo{
+    width: 120px;
+    border-radius: 15px;
+    padding-left: 30px;
+    padding-top:10px;
+    
+}
+
+.menuitem:hover{
+    background-color: rgb(19, 170, 70);
+}
+
+
+ul {
+    
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding-right: 400px;
+    padding-top: 60px;
+    font-size: 15px;
+
+}
+
+
+section{  color:$color-section;
+    
+    ul{    justify-content: start;
+        
+        li{
+            background-color:  rgb(117, 150, 67);
+            padding-right: 10px;
+            font-size: 30px;
+        
+        }
+    }
+}
+
+
+#parrafoimagen{
+    background-color: rgb(17, 17, 95);
+    color: white;
+    padding: 15px;
+}
+
+div{
+    img{
+        padding: 15px;
+    }
+}

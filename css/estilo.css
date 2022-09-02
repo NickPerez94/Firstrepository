@@ -1,0 +1,41 @@
+.encabezado {
+  background-color: 0; }
+
+.logo {
+  width: 120px;
+  border-radius: 15px;
+  padding-left: 30px;
+  padding-top: 10px; }
+
+.menuitem:hover {
+  background-color: #13aa46; }
+
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding-right: 400px;
+  padding-top: 60px;
+  font-size: 15px; }
+
+section {
+  color: blue; }
+
+section ul {
+  justify-content: start; }
+
+section ul li {
+  background-color: #759643;
+  padding-right: 10px;
+  font-size: 30px; }
+
+#parrafoimagen {
+  background-color: #11115f;
+  color: white;
+  padding: 15px; }
+
+div img {
+  padding: 15px; }
+
+/*# sourceMappingURL=estilo.css.map */

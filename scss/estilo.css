@@ -1,46 +1,378 @@
-.encabezado {
-  background-color: 0;
+@charset "UTF-8";
+/**menu de todas las páginas**/
+.maestro * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-.logo {
-  width: 120px;
+.maestro header {
+  background-color: rgb(12, 12, 56);
+  display: flex;
+  justify-content: start;
+  padding: 40px;
+  padding-bottom: 40px;
+}
+.maestro header nav .logo {
+  width: 100px;
   border-radius: 15px;
-  padding-left: 30px;
-  padding-top: 10px;
 }
-
-.menuitem:hover {
-  background-color: rgb(19, 170, 70);
-}
-
-ul {
+.maestro header nav ul {
   list-style-type: none;
   display: flex;
-  justify-content: center;
-  gap: 10px;
-  padding-right: 400px;
-  padding-top: 60px;
+  gap: 5px;
+  font-family: "Cairo", sans-serif;
   font-size: 15px;
+  padding-top: 5px;
+  margin: 20px;
+}
+.maestro header nav ul .menuitem:hover {
+  background-color: rgb(19, 170, 70);
+}
+.maestro header nav ul .menuitem {
+  border: ridge;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  border-style: outset;
 }
 
-section {
-  color: blue;
+/**sección del footer de todas las páginas**/
+/**columnas**/
+.itemcontacto {
+  list-style-type: none;
+  text-decoration: none;
+  padding: 12px;
 }
-section ul {
-  justify-content: start;
+
+.primerdetalle {
+  padding-top: 30px;
 }
-section ul li {
-  background-color: rgb(117, 150, 67);
-  padding-right: 10px;
+
+.segundodetalle {
+  display: flex;
+  justify-content: end;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.miksa {
+  width: 100px;
+}
+
+.primerdetalle::-moz-selection {
+  background-color: black;
+  color: white;
+}
+
+.primerdetalle::selection {
+  background-color: black;
+  color: white;
+}
+
+.textomio::-moz-selection {
+  background-color: black;
+  color: white;
+}
+
+.textomio::selection {
+  background-color: black;
+  color: white;
+}
+
+.futer {
+  display: flex;
+  justify-content: center;
+}
+
+.futerquienes {
+  display: flex;
+  justify-content: center;
+}
+
+/**redessociales**/
+.fa-facebook {
+  background-color: white;
+}
+
+.fa-instagram {
+  background-color: white;
+}
+
+.fa-whatsapp {
+  background-color: white;
+}
+
+/**inicio**/
+.imagen1 {
+  color: white;
+  background-image: url("../img/grisperla.jpg");
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 30px;
+  font-family: "Cairo", sans-serif;
+  font-weight: bold;
+}
+
+.giro:hover {
+  transform: rotate(-30deg);
+}
+
+/**quienes somos**/
+.parraparra {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: rgba(202, 202, 202, 0.925);
+  color: black;
+  border-style: outset;
+}
+
+.parra::-moz-selection {
+  background-color: black;
+  color: white;
+}
+
+.parra::selection {
+  background-color: black;
+  color: white;
+}
+
+.quienessomos {
+  padding-top: 100px;
+}
+
+/**nuestros servicios**/
+.sexion {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: rgba(202, 202, 202, 0.925);
+  color: black;
+  border-style: inset;
+}
+
+.sexion2 {
+  padding: 30px;
+}
+
+.titulotrab {
+  background-color: white;
+  color: black;
+  padding: 30px;
+}
+
+.tablat {
+  background-color: white;
+}
+
+.pres {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: rgba(202, 202, 202, 0.925);
+  color: black;
+  border-style: outset;
+}
+
+/**nuestros trabajos**/
+.titulotrab {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: rgba(202, 202, 202, 0.925);
+  color: black;
+  border-style: outset;
+}
+
+.gallerystart {
+  width: 750px;
+  padding: 50px;
+}
+
+.padre {
+  padding: 15px;
+  display: grid;
+}
+
+.contenedor {
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.titulo1 {
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding-block: 30px;
+}
+
+.letra1 {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: black;
+}
+
+/**un vistazo**/
+.parrafo2 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: rgba(202, 202, 202, 0.925);
+  color: black;
+  border-style: outset;
+}
+
+.video-responsive {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+}
+
+.parrafovideo {
+  background-color: white;
+}
+
+/**nuestro equipo**/
+.marios:hover {
+  filter: opacity(0.5);
 }
 
 #parrafoimagen {
-  background-color: rgb(17, 17, 95);
-  color: white;
-  padding: 15px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: rgba(202, 202, 202, 0.925);
+  color: black;
+  border-style: outset;
 }
 
-div img {
-  padding: 15px;
+.marios {
+  margin-left: 250px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.enprend {
+  vertical-align: text-bottom;
+}
+
+/**mediaqueries**/
+/**media querie para 460px (mobile)**/
+@media screen and (max-width: 460px) {
+  /**gallery media querie 460px**/
+  .gallerystart {
+    width: 300px;
+    padding: 12px;
+  }
+  /**index media querie para 460px (mobile)**/
+  .maestro {
+    clear: both;
+    margin: 0;
+    width: 100%;
+  }
+  .encabezado {
+    background-color: rgb(12, 12, 56);
+    padding: 0, 5px;
+  }
+  .imagen1 {
+    font-size: 10px;
+  }
+  .menu {
+    color: white;
+    list-style-type: none;
+    display: flex;
+    gap: 3px;
+    text-align: center;
+    justify-content: center;
+    font-family: "Cairo", sans-serif;
+    font-size: 10px;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  /**'nuestro equipo' media querie para 460px (mobile)**/
+  .bros {
+    width: 200px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    margin-left: 2px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+}
+/**index media querie para iphone SE 375px**/
+@media screen and (max-width: 375px) {
+  .gallerystart {
+    width: 360px;
+    padding: 10px;
+  }
+  .menu {
+    color: white;
+    list-style-type: none;
+    display: flex;
+    gap: 1px;
+    text-align: center;
+    justify-content: center;
+    font-family: "Cairo", sans-serif;
+    font-size: 3px;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .marios {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+}
+/**'nuestros trabajos' media querie para 769px (tablet)**/
+@media screen and (max-width: 769px) {
+  .encabezado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .gallerystart {
+    width: 600px;
+    padding: 10px;
+  }
+  /**'nuestro equipo' media querie para 769px (tablet)**/
+  .logo {
+    justify-content: center;
+  }
+  .marios {
+    display: flex;
+    width: 300px;
+    height: 270px;
+    justify-content: center;
+    margin-left: 50px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+  /**'index media querie para 769 px (tablet)**/
+  .menu {
+    color: white;
+    list-style-type: none;
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    font-family: "Cairo", sans-serif;
+    font-size: 15px;
+    width: 100%;
+  }
 }/*# sourceMappingURL=estilo.css.map */

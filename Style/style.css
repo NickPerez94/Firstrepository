@@ -138,6 +138,10 @@
      padding-top: 135px;
 }
 
+.parra{
+     text-align: center;
+}
+
 .parra::selection{
      background-color: black;
      color: white;

@@ -1,7 +1,11 @@
+@import'medias';
+@import 'fonts';
+
+
+
 /**variables**/
 
-$sizetitulos:2.3em;
-$font-family: 'Qwitcher Grypen', cursive;
+
 
 
 $estilos:( 
@@ -81,95 +85,33 @@ $estilos:(
    }
 }
 
-
-/**sección del footer de todas las páginas**/
-
-   /**columnas**/
-
-   .itemcontacto{
-    list-style-type: none;
-    text-decoration: none;
-    padding: 12px;
-  }
-
- .primerdetalle{
-    padding-top: 30px;
- }
-
- .segundodetalle{
-    display: flex;
-    justify-content: end;
-    padding-top: 30px;
-    padding-bottom: 30px;
- }
-
- .miksa{
-    width: 100px;
- }
-
- .primerdetalle::selection{
-    background-color: black;
-    color:white;
- }
-
- .textomio::selection{
-    background-color: black;
-    color: white;
- }
-
-
-    .futer{
-    display: flex;
-    justify-content: center;
-    }
-    
-
-    .futerquienes{
-    display: flex;
-    justify-content: center;
-    }
-
-/**redessociales**/   
  
+/**Home**/
 
- $redes: (
-   facebook:white,
-   instagram:white,
-   whatsapp:white,
- );
+ .imagen1 {
+   color: white;
+   background-image: url("../img/grisperla.jpg");
+   height: 350px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+              .giro:hover{
+              transform: rotate(-30deg);
+              }
 
- @each $redsocial, $colordered in $redes {
-   .fa-#{$redsocial}{
-      background-color: $colordered;
-   }  
-}
-
-
- /**inicio**/
-
-      .imagen1 {
-       color: white;
-       background-image: url("../img/grisperla.jpg");
-       height: 350px;
-       display: flex;
-       justify-content: center;
-       align-items: center;
-                  .giro:hover{
-                  transform: rotate(-30deg);
-                  }
-
-                  .giro{
-                     font-family: $font-family;
-                     font-size: 100px;
-                  }
+              .giro{
+                 font-family: $font-family1;
+                 font-size: 50px;
+              }
 }
 
 
 
-     
-    
 
-/**quienes somos**/
+
+
+
+/**Quiénes somos**/
 
     .parraparra{
      display: flex;
@@ -196,7 +138,7 @@ $estilos:(
     }
     
 
-/**nuestros servicios**/    
+/**Nuestros servicios**/    
 
 
 .sexion{
@@ -266,19 +208,18 @@ background-color: white;
  }
 
  .gallerystart{
-    width: 750px;
-    padding: 50px;
- }
+    width: 550px;
+   padding: 2px;
+}
 
 
  .padre{
     
     padding: 15px;
-    display: grid;
     }
 
  .contenedor{
-    width: 800px;
+    width: 500px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -315,10 +256,17 @@ background-color: white;
     font-size: $sizetitulos;
    }
 
+   .parrafito{
+      padding-left: 15px;
+      margin-top: 15px;
+      margin-bottom: 15px;
+   }
+
   .video-responsive {
 
    @include size(90%,500px);
-    margin-left: 20px;
+    margin-right: 15px;
+    margin-left: 15px;
     display: flex;
     justify-content: center;
 
@@ -352,179 +300,85 @@ background-color: white;
 
     }
 
+    
     .marios{
-    margin-left: 250px;
+    margin-left: 10px;
     margin-top: 25px;
     margin-bottom: 25px;
     }
-  
-    .enprend{
-      vertical-align: text-bottom;
-    }
-   
 
 
-/**mediaqueries**/
-
-/**media querie para 460px (mobile)**/
-
-@media screen and (max-width:460px) {
-
-   /**gallery media querie 460px**/
-
-
-  .corrido {
-       width: 350px;
-       padding: 12px;
-       }
-   
-
-  /**index media querie para 460px (mobile)**/
-
-
-  .maestro {
-  
-       clear: both;
-       margin: 0;
-       width: 100%;
-  
-       }
-
-
-       .encabezado {
-       background-color:  rgb(12, 12, 56);
-       padding: 0,5px;
-       }
-  
-       .imagen1 {
-            font-size: 10px;
-            
-           }
-        
+   .emprend{
+         margin-top: 50px;
+         margin-right: 15px;
+         margin-left: 15px;
        
-
-       .menu{ 
-            color: white;
-            list-style-type: none;
-            display: flex;   
-            gap: 3px;
-            text-align: center;
-            justify-content: center;
-            font-family: 'Cairo', sans-serif;
-            font-size: 10px;
-            width: 100%;
-            flex-wrap: wrap;
-       }
+   }
 
 
-        /**'nuestro equipo' media querie para 460px (mobile)**/
-  
-       .bros { width: 200px;
-            height: 250px;
-            display: flex;
-            justify-content: center;
-            margin-left: 2px;
-            margin-top: 25px;
-            margin-bottom: 25px;
+    /**sección del footer de todas las páginas**/
 
-       } 
-  
-  }
+   /**columnas**/
 
-   /**index media querie para iphone SE 375px**/
-
-
-   @media screen and (max-width:375px) {
-     
-   
-
-
-  .menu{ 
-       color: white;
-       list-style-type: none;
-       display: flex;   
-       gap: 1px;
-       text-align: center;
-       justify-content: center;
-       font-family: 'Cairo', sans-serif;
-       font-size: 3px;
-       width: 100%;
-       flex-wrap: wrap
-
-  }
-
-  .marios { 
-   display: flex;
-   width: 50px;
-   height: 50px;
-   justify-content: center;
-   margin-top: 25px;
-   margin-bottom: 25px;
-}
-
-  
-
-  } 
-
-  @media screen and (max-width:600px) {
-   .corrido {
-      width: 350px;
+   .itemcontacto{
+      list-style-type: none;
+      text-decoration: none;
       padding: 12px;
+    }
+  
+    .primerdetalle{
+     padding-top: 30px;
+   }
+  
+   .segundodetalle{
+      display: flex;
+      justify-content: end;
+      padding-top: 30px;
+      padding-bottom: 30px;
+   }
+  
+   .miksa{
+      width: 100px;
+   }
+  
+   .primerdetalle::selection{
+      background-color: black;
+      color:white;
+   }
+  
+   .textomio::selection{
+      background-color: black;
+      color: white;
+   }
+  
+  
+      .futer {
+      display: flex;
+      justify-content: center;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      }
+      
+  
+      .futerquienes{
+      display: flex;
+      justify-content: center;
+      margin-top: 15px;
+      margin-bottom: 15px;
       }
   
-
-}
-
-
-      /**'nuestros trabajos' media querie para 769px (tablet)**/
+  /**redessociales**/   
+   
   
-  @media screen and (max-width:769px){
-     
-
-       .encabezado{
-                     display: flex;
-                     justify-content: center;
-                     align-items: center;
-            }
-
-       .gallerystart {
-            width: 600px;
-            padding: 10px;
-            }
-
-/**'nuestro equipo' media querie para 769px (tablet)**/
-
-       .logo{
-            justify-content: center;
-       }
-
-       .marios { 
-            display: flex;
-            width: 300px;
-            height: 270px;
-            justify-content: center;
-            margin-left: 50px;
-            margin-top: 25px;
-            margin-bottom: 25px;
-       }
-
+   $redes: (
+     facebook:white,
+     instagram:white,
+     whatsapp:white,
+   );
   
-   /**'index media querie para 769 px (tablet)**/
- 
-
-   .menu{ 
-       color: white;
-       list-style-type: none;
-       display: flex;   
-       gap: 5px;
-       flex-wrap: wrap;
-       text-align: center;
-       justify-content: center;
-       font-family: 'Cairo', sans-serif;
-       font-size: 15px;
-       width: 100%;
+   @each $redsocial, $colordered in $redes {
+     .fa-#{$redsocial}{
+        background-color: $colordered;
+     }  
   }
 
-
-
-  }

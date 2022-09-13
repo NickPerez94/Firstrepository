@@ -1,4 +1,113 @@
 @charset "UTF-8";
+/**mediaqueries**/
+/**'nuestros trabajos' media querie para 769px (tablet)**/
+@media screen and (max-width: 769px) {
+  .encabezado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /**gallery 769**/
+  .gallerystart {
+    width: 500px;
+    padding: 1px;
+  }
+  /**'nuestro equipo' media querie para 769px (tablet)**/
+  .logo {
+    justify-content: center;
+  }
+  .marios {
+    display: flex;
+    width: 300px;
+    height: 250px;
+    justify-content: center;
+    margin-left: 50px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+  /**'index media querie para 769 px (tablet)**/
+  .menu {
+    color: white;
+    list-style-type: none;
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    font-family: "Cairo", sans-serif;
+    font-size: 15px;
+    width: 100%;
+  }
+}
+/**gallery ajuste 520**/
+@media screen and (max-width: 520px) {
+  .corrido {
+    width: 250px;
+    padding: 5px;
+  }
+}
+/**media querie para 460px (mobile)**/
+@media screen and (max-width: 460px) {
+  /**index media querie para 460px (mobile)**/
+  .maestro {
+    clear: both;
+    margin: 0;
+    width: 100%;
+  }
+  .encabezado {
+    background-color: rgb(12, 12, 56);
+    padding: 0, 5px;
+  }
+  .imagen1 {
+    font-size: 10px;
+  }
+  .menu {
+    color: white;
+    list-style-type: none;
+    display: flex;
+    gap: 3px;
+    text-align: center;
+    justify-content: center;
+    font-family: "Cairo", sans-serif;
+    font-size: 10px;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  /**'nuestro equipo' media querie para 460px (mobile)**/
+  .bros {
+    display: flex;
+    width: 300px;
+    height: 250px;
+    justify-content: center;
+    margin-left: 50px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+}
+/**index media querie 398px**/
+@media screen and (max-width: 398px) {
+  .menu {
+    color: white;
+    list-style-type: none;
+    display: flex;
+    gap: 1px;
+    text-align: center;
+    justify-content: center;
+    font-family: "Cairo", sans-serif;
+    font-size: 3px;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .marios {
+    display: flex;
+    width: 280px;
+    height: 250px;
+    justify-content: center;
+    margin-left: 50px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+}
 /**variables**/
 .parra {
   font-size: 1rem;
@@ -42,73 +151,7 @@
   border-style: outset;
 }
 
-/**sección del footer de todas las páginas**/
-/**columnas**/
-.itemcontacto {
-  list-style-type: none;
-  text-decoration: none;
-  padding: 12px;
-}
-
-.primerdetalle {
-  padding-top: 30px;
-}
-
-.segundodetalle {
-  display: flex;
-  justify-content: end;
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-
-.miksa {
-  width: 100px;
-}
-
-.primerdetalle::-moz-selection {
-  background-color: black;
-  color: white;
-}
-
-.primerdetalle::selection {
-  background-color: black;
-  color: white;
-}
-
-.textomio::-moz-selection {
-  background-color: black;
-  color: white;
-}
-
-.textomio::selection {
-  background-color: black;
-  color: white;
-}
-
-.futer {
-  display: flex;
-  justify-content: center;
-}
-
-.futerquienes {
-  display: flex;
-  justify-content: center;
-}
-
-/**redessociales**/
-.fa-facebook {
-  background-color: white;
-}
-
-.fa-instagram {
-  background-color: white;
-}
-
-.fa-whatsapp {
-  background-color: white;
-}
-
-/**inicio**/
+/**Home**/
 .imagen1 {
   color: white;
   background-image: url("../img/grisperla.jpg");
@@ -122,10 +165,10 @@
 }
 .imagen1 .giro {
   font-family: "Qwitcher Grypen", cursive;
-  font-size: 100px;
+  font-size: 50px;
 }
 
-/**quienes somos**/
+/**Quiénes somos**/
 .parraparra {
   display: flex;
   justify-content: center;
@@ -151,7 +194,7 @@
   padding-top: 100px;
 }
 
-/**nuestros servicios**/
+/**Nuestros servicios**/
 .sexion {
   text-align: center;
   padding-top: 10px;
@@ -208,17 +251,16 @@
 }
 
 .gallerystart {
-  width: 750px;
-  padding: 50px;
+  width: 550px;
+  padding: 2px;
 }
 
 .padre {
   padding: 15px;
-  display: grid;
 }
 
 .contenedor {
-  width: 800px;
+  width: 500px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -251,10 +293,17 @@
   font-size: 2.3em;
 }
 
+.parrafito {
+  padding-left: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
 .video-responsive {
   width: 90%;
   height: 500px;
-  margin-left: 20px;
+  margin-right: 15px;
+  margin-left: 15px;
   display: flex;
   justify-content: center;
 }
@@ -281,123 +330,83 @@
 }
 
 .marios {
-  margin-left: 250px;
+  margin-left: 10px;
   margin-top: 25px;
   margin-bottom: 25px;
 }
 
-.enprend {
-  vertical-align: text-bottom;
+.emprend {
+  margin-top: 50px;
+  margin-right: 15px;
+  margin-left: 15px;
 }
 
-/**mediaqueries**/
-/**media querie para 460px (mobile)**/
-@media screen and (max-width: 460px) {
-  /**gallery media querie 460px**/
-  .corrido {
-    width: 350px;
-    padding: 12px;
-  }
-  /**index media querie para 460px (mobile)**/
-  .maestro {
-    clear: both;
-    margin: 0;
-    width: 100%;
-  }
-  .encabezado {
-    background-color: rgb(12, 12, 56);
-    padding: 0, 5px;
-  }
-  .imagen1 {
-    font-size: 10px;
-  }
-  .menu {
-    color: white;
-    list-style-type: none;
-    display: flex;
-    gap: 3px;
-    text-align: center;
-    justify-content: center;
-    font-family: "Cairo", sans-serif;
-    font-size: 10px;
-    width: 100%;
-    flex-wrap: wrap;
-  }
-  /**'nuestro equipo' media querie para 460px (mobile)**/
-  .bros {
-    width: 200px;
-    height: 250px;
-    display: flex;
-    justify-content: center;
-    margin-left: 2px;
-    margin-top: 25px;
-    margin-bottom: 25px;
-  }
+/**sección del footer de todas las páginas**/
+/**columnas**/
+.itemcontacto {
+  list-style-type: none;
+  text-decoration: none;
+  padding: 12px;
 }
-/**index media querie para iphone SE 375px**/
-@media screen and (max-width: 375px) {
-  .menu {
-    color: white;
-    list-style-type: none;
-    display: flex;
-    gap: 1px;
-    text-align: center;
-    justify-content: center;
-    font-family: "Cairo", sans-serif;
-    font-size: 3px;
-    width: 100%;
-    flex-wrap: wrap;
-  }
-  .marios {
-    display: flex;
-    width: 50px;
-    height: 50px;
-    justify-content: center;
-    margin-top: 25px;
-    margin-bottom: 25px;
-  }
+
+.primerdetalle {
+  padding-top: 30px;
 }
-@media screen and (max-width: 600px) {
-  .corrido {
-    width: 350px;
-    padding: 12px;
-  }
+
+.segundodetalle {
+  display: flex;
+  justify-content: end;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
-/**'nuestros trabajos' media querie para 769px (tablet)**/
-@media screen and (max-width: 769px) {
-  .encabezado {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .gallerystart {
-    width: 600px;
-    padding: 10px;
-  }
-  /**'nuestro equipo' media querie para 769px (tablet)**/
-  .logo {
-    justify-content: center;
-  }
-  .marios {
-    display: flex;
-    width: 300px;
-    height: 270px;
-    justify-content: center;
-    margin-left: 50px;
-    margin-top: 25px;
-    margin-bottom: 25px;
-  }
-  /**'index media querie para 769 px (tablet)**/
-  .menu {
-    color: white;
-    list-style-type: none;
-    display: flex;
-    gap: 5px;
-    flex-wrap: wrap;
-    text-align: center;
-    justify-content: center;
-    font-family: "Cairo", sans-serif;
-    font-size: 15px;
-    width: 100%;
-  }
+
+.miksa {
+  width: 100px;
+}
+
+.primerdetalle::-moz-selection {
+  background-color: black;
+  color: white;
+}
+
+.primerdetalle::selection {
+  background-color: black;
+  color: white;
+}
+
+.textomio::-moz-selection {
+  background-color: black;
+  color: white;
+}
+
+.textomio::selection {
+  background-color: black;
+  color: white;
+}
+
+.futer {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.futerquienes {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+/**redessociales**/
+.fa-facebook {
+  background-color: white;
+}
+
+.fa-instagram {
+  background-color: white;
+}
+
+.fa-whatsapp {
+  background-color: white;
 }/*# sourceMappingURL=estilo.css.map */

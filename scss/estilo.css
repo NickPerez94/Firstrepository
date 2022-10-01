@@ -9,8 +9,7 @@
   }
   /**gallery 769**/
   .gallerystart {
-    width: 500px;
-    padding: 1px;
+    width: 50%;
   }
   /**'nuestro equipo' media querie para 769px (tablet)**/
   .logo {
@@ -42,7 +41,7 @@
 /**gallery ajuste 520**/
 @media screen and (max-width: 520px) {
   .corrido {
-    width: 250px;
+    width: 90%;
     padding: 5px;
   }
 }
@@ -107,6 +106,10 @@
     margin-top: 25px;
     margin-bottom: 25px;
   }
+  /**footer**/
+  .futer {
+    font-size: 15px;
+  }
 }
 /**variables**/
 .parra {
@@ -121,9 +124,7 @@
   box-sizing: border-box;
 }
 .maestro header {
-  background-color: rgb(12, 12, 56);
-  display: flex;
-  justify-content: start;
+  background-color: rgb(112, 196, 189);
   padding: 40px;
   padding-bottom: 40px;
 }
@@ -141,12 +142,11 @@
   margin: 20px;
 }
 .maestro header nav ul .menuitem:hover {
-  background-color: rgb(19, 170, 70);
+  background-color: rgb(112, 196, 189);
 }
 .maestro header nav ul .menuitem {
   border: ridge;
   background-color: white;
-  color: black;
   font-weight: bold;
   border-style: outset;
 }
@@ -178,6 +178,12 @@
   color: black;
   border-style: outset;
   font-size: 2.3em;
+  font-family: "Libre Baskerville", serif;
+}
+
+.parra {
+  font-family: "DM Serif Display", serif;
+  font-size: 1.5em;
 }
 
 .parra::-moz-selection {
@@ -207,6 +213,7 @@
 .parrafosiguiente p {
   display: flex;
   justify-content: center;
+  font-family: "DM Serif Display", serif;
 }
 
 .sexion2 {
@@ -215,6 +222,7 @@
 
 .sexiontitulo {
   font-size: 2.3em;
+  font-family: "Libre Baskerville", serif;
 }
 
 .titulotrab {
@@ -239,6 +247,7 @@
 }
 .pres .presupuesto {
   font-size: 2.3em;
+  font-family: "Libre Baskerville", serif;
 }
 
 /**nuestros trabajos**/
@@ -248,11 +257,18 @@
   background-color: rgba(202, 202, 202, 0.925);
   color: black;
   border-style: outset;
+  font-family: "Libre Baskerville", serif;
+  display: flex;
+  justify-content: center;
 }
 
 .gallerystart {
-  width: 550px;
+  width: 50%;
   padding: 2px;
+  margin: auto;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .padre {
@@ -291,21 +307,25 @@
   color: black;
   border-style: outset;
   font-size: 2.3em;
+  font-family: "Libre Baskerville", serif;
 }
 
 .parrafito {
   padding-left: 15px;
   margin-top: 15px;
   margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  font-family: "DM Serif Display", serif;
 }
 
 .video-responsive {
-  width: 90%;
+  width: 60%;
   height: 500px;
   margin-right: 15px;
   margin-left: 15px;
-  display: flex;
-  justify-content: center;
+  margin: auto;
+  display: block;
 }
 
 .parrafovideo {
@@ -327,18 +347,23 @@
   color: black;
   border-style: outset;
   font-size: 2.3em;
+  font-family: "Libre Baskerville", serif;
 }
 
 .marios {
   margin-left: 10px;
   margin-top: 25px;
   margin-bottom: 25px;
+  margin: auto;
+  display: block;
 }
 
 .emprend {
   margin-top: 50px;
   margin-right: 15px;
   margin-left: 15px;
+  font-family: "DM Serif Display", serif;
+  text-align: center;
 }
 
 /**sección del footer de todas las páginas**/
